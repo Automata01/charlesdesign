@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile / CharlesDesign</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+    <link rel="stylesheet" href="style/Profile.css">
+</head>
+<body>
+    <div class="bg-modern">
+        <img class="main-logo" src="img/Black And White Logo.png" alt="Logo">
+        <div class="ul-nav">
+            <button class="hover" onclick="location.href='index.html'"><img src="img/fileuser.svg" alt=""></button>
+            <!--<button><img src="img/user.svg" alt=""></button>-->
+            <button class="hover" onclick="location.href='Blog.html'"><img src="img/blog.svg" class="blog"></button>
+            <!--<button class="hover" onclick="location.href='About.html'"><img src="img/info.svg" class="info"></button>-->
+        </div>
+       
+        <div class="f-plate">
+           <div class="f-plate-in">
+                <div ><img class="profile-img" src="img/CharlesArabia (1).jpg" alt=""></div>
+                <h1 class="name-aboutme">Charles Arabia</h1>
+                <ul>
+                    <li><h1 class="ws-contact">Contact</h1></li>
+                    <li><a href="#home"><img src="img/facebook.svg" class="img-fb">facebook</a></li>
+                    <li><a href="#news"><img src="img/insta.svg" class="img-fb">instagram</a></li>
+                    <li><a href="#contact"><img src="img/phone.svg" class="img-fb">phone</a></li>
+                    <li><a href="#about"><img src="img/gmai.svg" class="img-fb">Email</a></li>
+                  </ul>
+           </div>
+           <div class="aboutme-ws">
+            <p class="abt-me">Hello everyone! I'm a college student, and the reason I created this website was to share my creations with you. Since I was in eighth grade, I've been studying computer science, which includes programming, editing, and designing. The first thing I learned was the programming language used to create websites, followed by editing and designing. I discovered I'm also skilled at this. Yes, it's challenging, but I'm glad I have that freedom.</p>
+           </div>
+           <div class="ux-prog-dsgn">
+                <div onclick="myFunction()" class="s1 bb">
+                    <div class="s1-1">
+                       <h1 class="p1-web"> UI/UX<br>designing</h1>
+                    </div>
+                </div>
+                <div onclick="myFunction2()" class="s2 bb">
+                    <div class="s1-2"><h1 class="p1-web">Web <br> programming</h1> </div>     
+                </div>
+                <div onclick="myFunction3()" class="s3 bb">
+                    <div class="s1-3"><h1 class="p1-web"> Video and<br> Photo Editing</h1></div>
+                </div>
+           </div>
+           <div class="prgrsbr"></div>
+                <div class="myDIV ALL" id="myDIV"></div>
+                <div class="myDIV2 ALL" id="myDIV2">
+                    <div class="wrapper">
+                        <div class="card">
+                          <div class="circle">
+                            <div class="bar"></div>
+                            <div class="box"><span></span></div>
+                          </div>
+                          <div class="text">HTML & CSS</div>
+                        </div>
+                        <div class="card js">
+                          <div class="circle">
+                            <div class="bar"></div>
+                            <div class="box"><span></span></div>
+                          </div>
+                          <div class="text">JavaScript</div>
+                        </div>
+                        <div class="card Php">
+                          <div class="circle">
+                            <div class="bar"></div>
+                            <div class="box"><span></span></div>
+                          </div>
+                          <div class="text">Php</div>
+                        </div>
+                        <div class="card Sql">
+                          <div class="circle">
+                            <div class="bar"></div>
+                            <div class="box"><span></span></div>
+                          </div>
+                          <div class="text">Sql</div>
+                        </div>
+                      </div>
+                </div>
+                <div class="myDIV3 ALL" id="myDIV3"></div>
+           <div class="ws-1">About me</div>
+        </div>
+    </div>
+    <script src="javascript/profile.js"></script>
+<script>
+
+var x = document.getElementById("myDIV");
+var y = document.getElementById("myDIV2");
+var z = document.getElementById("myDIV3");
+
+ function myFunction() {
+  if (x.style.display = "none") {
+    x.style.display = "block";
+    y.style.display ="none";
+    z.style.display = "none"
+  } 
+}
+
+function myFunction2() {
+  if (y.style.display = "none") {
+    y.style.display = "block";
+    z.style.display = "none";
+  }
+}
+
+function myFunction3() {
+  if (z.style.display = "none") {
+    z.style.display = "block";
+    y.style.display = "none";
+    x.style.display = "none";
+  }
+}
+  
+  </script>
+</body>
+</html>

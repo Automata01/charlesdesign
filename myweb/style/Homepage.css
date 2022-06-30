@@ -1,0 +1,274 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+body{
+    margin: 0;
+}
+
+.bg-modern{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: rgb(18,1,41);
+    background: linear-gradient(90deg, rgb(10, 0, 48) 0%, rgb(2, 13, 73) 48%, rgb(38, 0, 88) 82%);
+}
+
+.main-logo{
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    width: 60px;
+    pointer-events: none;
+}
+
+.ul-nav{
+    width: 220px;
+    height: 60px;
+    position: relative;
+    top: 20px;
+    float: right;
+}
+
+.ul-nav .hover{
+    width: 100px;
+    height: 60px;
+    color: white;
+    border: none;
+    background-color: transparent;
+    -webkit-clip-path: circle(20% at 50% 50%);
+    clip-path: circle(20% at 50% 50%);
+    transition: 0.5s ease-in-out;
+}
+
+.ul-nav .active{
+    width: 100px;
+    height: 60px;
+    color: white;
+    border: none;
+    background-color: rgb(188, 17, 255);
+    -webkit-clip-path: circle(33.1% at 50% 50%);
+    clip-path: circle(33.1% at 50% 50%);
+}
+
+.ul-nav button:hover{
+    background-color: rgb(188, 17, 255);
+    -webkit-clip-path: circle(33.1% at 50% 50%);
+    clip-path: circle(33.1% at 50% 50%);
+}
+
+.ul-nav button img{
+    width: 25px;
+    padding: 0 0 0;
+}
+
+#svg{
+    position: absolute;
+    top: 560px;
+    height: 353px;
+}
+
+.ul-nav button .info{
+    width: 10px;
+}
+
+.intro{
+    position: absolute;
+    top: 300px;
+    left: 350px;
+    
+}
+
+.intro h2{
+    font-size: 70px;
+    color: rgb(177, 177, 177);
+    font-family: 'Fredoka One', cursive;
+    font-size: 72px;
+    background-color: #bbbbbb;
+    background-image: linear-gradient(45deg,  #eeeeee, #a3a3a3);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+
+.intro h6{
+    position: absolute;
+    left: 100px;
+    top: -170px;
+    color: white;
+    font-size: 70px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.intro p{
+    position: absolute;
+    left: 60px;
+    top: 120px;
+    color: rgb(192, 192, 192);
+    font-family: 'Hind', sans-serif;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 850px;
+    left: 70px;
+    width: 400px;
+    z-index: 1;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*.img-dsign{
+    position: absolute;
+    top: 200px;
+    left: 800px;
+    width: 300px;
+    transform:skewY(10deg);
+}*/
+
+.img-fb{
+    width: 22px;
+}
+
+.img-content{
+    position: absolute;
+    width: 500px;
+    left: 700px;
+    top: 100px;
+    transform: skewY(15deg);
+   
+}
+
+.img-content:hover{
+    animation: movement 2s ease-in;
+}
+
+
+@keyframes movement{
+    0%{
+        top: 100px;
+    }50%{
+        top: 95px;
+    }
+    100%{
+        top: 100px;
+    }
+}
+
+.tomy-profile{
+    position: absolute;
+    width: 100px;
+    top: 500px;
+    left: 550px;
+    height: 50px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    transition: 0.1s;
+    animation: mymove 10s infinite;
+}
+
+.tomy-profile:hover{
+    width: 120px;
+}
+
+@keyframes mymove {
+    0%   { background: blueviolet;}
+    25%   { background: rgb(239, 68, 255);}
+    50% { background: rgb(226, 43, 113);}
+    75% { background: rgb(43, 107, 226);}
+    100%   { background: blueviolet;}
+}
+
+.tomy-profile a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 1px;
+}
+
+img {
+    pointer-events: none;
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .bg-modern {
+      width: 100%;
+      height: 100vh; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    .main-logo{
+        top: 20px;
+        left: 20px;
+    }
+    #svg{
+        top: 570px;
+        transform: scale(2, 4);
+        height: 200px;
+    }
+    .intro{
+        top: 200px;
+        left: 60px;
+    }
+    .intro h2{
+        position: absolute;
+        top: 60px;
+        left: -10px;
+        font-size: 35px;
+        width: 300px;
+    }
+    .intro h6{
+        font-size: 32px;
+        left: 40px;
+        top: -20px;
+        width: 200px;
+    }
+    .intro p{
+        left: 50px;
+        width: 200px;
+    }
+    ul{
+        top: 830px;
+        left: 80px;
+    }
+
+    .ul-nav{
+        right: -15px;
+        width: 330px;
+    }
+    .ul-nav button img{
+        width: 20px;
+    }
+    .ul-nav button .info{
+        width: 7px;
+    }
+    .tomy-profile{
+        z-index: 1;
+        top: 450px;
+        left: 140px;
+    }
+
+}
